@@ -1,0 +1,1 @@
+import Script from 'next/script';import{legalServiceJsonLd}from'@/lib/schema';export default function Home(){return(<><Script id='jsonld' type='application/ld+json'>{JSON.stringify(legalServiceJsonLd())}</Script><h1>TBD Law Firm – Lucknow</h1><p>Address: Sapru Marg, Lucknow 226001</p><p>Languages: Hindi & English</p></>)}

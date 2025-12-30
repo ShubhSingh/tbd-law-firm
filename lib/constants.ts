@@ -1,0 +1,1 @@
+export const FIRM={NAME:'TBD Law Firm',CITY:'Lucknow',STATE:'Uttar Pradesh',ADDRESS:'Sapru Marg',POSTAL:'226001',REGISTERED_CITY:'Lucknow',REGISTERED_STATE:'Uttar Pradesh',EMAIL:'send2shubham@gmail.com',PHONE:'+919673151602'}

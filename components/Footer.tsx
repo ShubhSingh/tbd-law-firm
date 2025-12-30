@@ -1,0 +1,1 @@
+export default function Footer(){return(<footer className='border-t p-4 text-sm'>TBD Law Firm | Sapru Marg, Lucknow 226001 | Email: send2shubham@gmail.com | Phone: +919673151602<p className='text-xs mt-2'>Disclaimer: No solicitation, informational only.</p></footer>)}
