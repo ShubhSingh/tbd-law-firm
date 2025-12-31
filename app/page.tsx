@@ -278,7 +278,6 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div>
-              <h3 className="text-2xl font-bold mb-6">Send Us a Message</h3>
               {submitted && (
                 <div className="bg-green-500/20 border border-green-500 text-white px-4 py-3 rounded-lg mb-6">
                   Thank you! We'll get back to you soon.
