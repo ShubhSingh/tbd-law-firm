@@ -54,7 +54,7 @@ export default function Header() {
 
           <a
             href="#contact"
-            className={`hidden md:inline-block px-6 py-2 rounded-lg font-semibold transition-all ${
+            className={`px-6 py-2 rounded-lg font-semibold transition-all ${
               scrolled
                 ? 'bg-blue-600 text-white hover:bg-blue-700'
                 : 'bg-white text-blue-900 hover:bg-blue-50'

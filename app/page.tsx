@@ -53,8 +53,8 @@ export default function Home() {
             family, property, and corporate law. Serving clients with dedication and integrity.
           </p>
           
-          {/* Quick Services Overview */}
-          <div className="flex flex-wrap justify-center gap-4 mb-12 text-sm">
+          {/* Quick Services Overview - Hidden on mobile */}
+          <div className="hidden md:flex flex-wrap justify-center gap-4 mb-12 text-sm">
             <a
               href="#service-civil"
               className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 hover:bg-white/20 hover:scale-105 transition-all cursor-pointer"
