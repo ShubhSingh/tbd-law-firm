@@ -1,65 +1,67 @@
-import Link from 'next/link'
+'use client'
+
 import { FIRM } from '../lib/constants'
+import { useState, useEffect } from 'react'
 
 export default function Header() {
-  return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
-      <div className="max-w-6xl mx-auto px-4">
-        {/* Top Bar */}
-        <div className="flex justify-between items-center py-2 text-sm border-b border-gray-200">
-          <div className="flex gap-4 text-gray-600">
-            <a href={`mailto:${FIRM.EMAIL}`} className="hover:text-blue-600 flex items-center gap-1">
-              <span>📧</span>
-              {FIRM.EMAIL}
-            </a>
-            <a href={`tel:${FIRM.PHONE}`} className="hover:text-blue-600 flex items-center gap-1">
-              <span>📞</span>
-              {FIRM.PHONE}
-            </a>
-          </div>
-          <div className="text-gray-600">
-            {FIRM.CITY}, {FIRM.STATE}
-          </div>
-        </div>
+  const [scrolled, setScrolled] = useState(false)
 
-        {/* Main Navigation */}
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  return (
+    <header 
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled 
+          ? 'bg-white/95 backdrop-blur-sm shadow-lg' 
+          : 'bg-transparent'
+      }`}
+    >
+      <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center py-4">
-          <Link href="/" className="text-2xl font-bold text-blue-900 hover:text-blue-700 transition">
+          <a 
+            href="#home" 
+            className={`text-2xl font-bold transition-colors ${
+              scrolled ? 'text-blue-900' : 'text-white'
+            }`}
+          >
             {FIRM.NAME}
-          </Link>
+          </a>
           
-          <nav className="flex gap-6">
-            <Link 
-              href="/" 
-              className="text-gray-700 hover:text-blue-600 font-medium transition"
-            >
-              Home
-            </Link>
-            <Link 
-              href="/about" 
-              className="text-gray-700 hover:text-blue-600 font-medium transition"
-            >
-              About
-            </Link>
-            <Link 
-              href="/practice-areas" 
-              className="text-gray-700 hover:text-blue-600 font-medium transition"
-            >
-              Practice Areas
-            </Link>
-            <Link 
-              href="/team" 
-              className="text-gray-700 hover:text-blue-600 font-medium transition"
-            >
-              Our Team
-            </Link>
-            <Link 
-              href="/contact" 
-              className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition font-medium"
-            >
-              Contact Us
-            </Link>
+          <nav className="hidden md:flex gap-8">
+            {[
+              { name: 'Home', href: '#home' },
+              { name: 'About', href: '#about' },
+              { name: 'Services', href: '#services' },
+              { name: 'Team', href: '#team' }
+            ].map((item) => (
+              <a
+                key={item.name}
+                href={item.href}
+                className={`font-medium transition-colors hover:text-blue-600 ${
+                  scrolled ? 'text-gray-700' : 'text-white'
+                }`}
+              >
+                {item.name}
+              </a>
+            ))}
           </nav>
+
+          <a
+            href="#contact"
+            className={`px-6 py-2 rounded-lg font-semibold transition-all ${
+              scrolled
+                ? 'bg-blue-600 text-white hover:bg-blue-700'
+                : 'bg-white text-blue-900 hover:bg-blue-50'
+            }`}
+          >
+            Contact Us
+          </a>
         </div>
       </div>
     </header>
