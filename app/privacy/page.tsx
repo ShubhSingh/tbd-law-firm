@@ -1,3 +1,10 @@
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy',
+  description: 'Privacy Policy for TBD Law Firm. Learn how we collect, use, and protect your personal information in compliance with India\'s DPDP Act, 2023.',
+}
+
 export default function Privacy() {
   return (
     <div className="prose max-w-3xl">
