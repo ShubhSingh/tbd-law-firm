@@ -93,14 +93,14 @@ export default function Home() {
             </a>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="#contact" 
-              className="bg-white text-blue-900 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-all transform hover:scale-105 shadow-lg"
+            <a
+              href="#contact"
+              className="border-2 border-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-900 transition-all transform hover:scale-105"
             >
               Get Legal Help
             </a>
-            <a 
-              href="#services" 
+            <a
+              href="#services"
               className="border-2 border-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-900 transition-all transform hover:scale-105"
             >
               Our Services
@@ -108,8 +108,8 @@ export default function Home() {
           </div>
         </div>
         
-        {/* Scroll Indicator - Outside content div, inside section */}
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+        {/* Scroll Indicator - Hidden on mobile, visible on desktop */}
+        <div className="hidden md:block absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
           <a href="#about" className="text-white text-4xl hover:text-blue-200 transition">↓</a>
         </div>
       </section>
