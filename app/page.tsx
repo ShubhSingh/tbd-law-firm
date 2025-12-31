@@ -48,10 +48,50 @@ export default function Home() {
           <p className="text-2xl md:text-3xl mb-4 text-blue-200">
             Expert Legal Services in Lucknow
           </p>
-          <p className="text-xl mb-12 text-gray-300 max-w-3xl mx-auto">
-            Professional advocates providing comprehensive legal solutions in civil, criminal, 
+          <p className="text-xl mb-8 text-gray-300 max-w-3xl mx-auto">
+            Professional advocates providing comprehensive legal solutions in civil, criminal,
             family, property, and corporate law. Serving clients with dedication and integrity.
           </p>
+          
+          {/* Quick Services Overview */}
+          <div className="flex flex-wrap justify-center gap-4 mb-12 text-sm">
+            <a
+              href="#service-civil"
+              className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 hover:bg-white/20 hover:scale-105 transition-all cursor-pointer"
+            >
+              Civil Litigation
+            </a>
+            <a
+              href="#service-criminal"
+              className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 hover:bg-white/20 hover:scale-105 transition-all cursor-pointer"
+            >
+              Criminal Defense
+            </a>
+            <a
+              href="#service-family"
+              className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 hover:bg-white/20 hover:scale-105 transition-all cursor-pointer"
+            >
+              Family Law
+            </a>
+            <a
+              href="#service-property"
+              className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 hover:bg-white/20 hover:scale-105 transition-all cursor-pointer"
+            >
+              Property Law
+            </a>
+            <a
+              href="#service-corporate"
+              className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 hover:bg-white/20 hover:scale-105 transition-all cursor-pointer"
+            >
+              Corporate Law
+            </a>
+            <a
+              href="#service-consumer"
+              className="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 hover:bg-white/20 hover:scale-105 transition-all cursor-pointer"
+            >
+              Consumer Protection
+            </a>
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
               href="#contact" 
@@ -66,11 +106,11 @@ export default function Home() {
               Our Services
             </a>
           </div>
-          
-          {/* Scroll Indicator */}
-          <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <a href="#about" className="text-white text-4xl">↓</a>
-          </div>
+        </div>
+        
+        {/* Scroll Indicator - Outside content div, inside section */}
+        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <a href="#about" className="text-white text-4xl hover:text-blue-200 transition">↓</a>
         </div>
       </section>
 
@@ -170,7 +210,8 @@ export default function Home() {
             ].map((service, idx) => (
               <div
                 key={idx}
-                className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2"
+                id={`service-${['civil', 'criminal', 'family', 'property', 'corporate', 'consumer'][idx]}`}
+                className="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 scroll-mt-24"
               >
                 <div className="text-5xl mb-4">{service.icon}</div>
                 <h3 className="text-2xl font-bold mb-3 text-gray-900">{service.title}</h3>
