@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import '../styles/globals.css'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import DisclaimerModal from '../components/DisclaimerModal'
 
 export const metadata: Metadata = {
   title: {
@@ -28,7 +27,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="flex flex-col min-h-screen">
-        <DisclaimerModal />
         <Header />
         <main className="flex-grow">
           {children}
