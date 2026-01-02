@@ -69,14 +69,14 @@ export default function Header() {
 
             {/* Menu Dropdown */}
             {mobileMenuOpen && (
-              <div className="absolute top-full right-0 mt-2 md:w-[12vw] w-[80vw] bg-white border border-gray-200 shadow-2xl rounded-lg">
+              <div className="absolute top-full right-0 mt-2 md:w-[12vw] w-[80vw] md:bg-slate-800 bg-white md:border-slate-700 border-gray-200 border shadow-2xl rounded-lg">
                 <nav className="px-6 py-4 space-y-1">
                   {menuItems.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
                       onClick={() => setMobileMenuOpen(false)}
-                      className="block text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium py-3 px-4 rounded-lg transition-all"
+                      className="block md:text-white text-gray-700 md:hover:bg-slate-700 hover:bg-blue-50 md:hover:text-blue-300 hover:text-blue-600 font-medium py-3 px-4 rounded-lg transition-all"
                     >
                       {item.name}
                     </a>
@@ -84,7 +84,7 @@ export default function Header() {
                   <a
                     href="#contact"
                     onClick={() => setMobileMenuOpen(false)}
-                    className="block text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium py-3 px-4 rounded-lg transition-all"
+                    className="block md:text-white text-gray-700 md:hover:bg-slate-700 hover:bg-blue-50 md:hover:text-blue-300 hover:text-blue-600 font-medium py-3 px-4 rounded-lg transition-all"
                   >
                     Contact Us
                   </a>
