@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react'
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,6 +14,13 @@ export default function Header() {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  const menuItems = [
+    { name: 'Home', href: '#home' },
+    { name: 'About', href: '#about' },
+    { name: 'Services', href: '#services' },
+    { name: 'Team', href: '#team' }
+  ]
 
   return (
     <header 
@@ -33,35 +41,57 @@ export default function Header() {
             {FIRM.NAME}
           </a>
           
-          <nav className="hidden md:flex gap-8">
-            {[
-              { name: 'Home', href: '#home' },
-              { name: 'About', href: '#about' },
-              { name: 'Services', href: '#services' },
-              { name: 'Team', href: '#team' }
-            ].map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className={`font-medium transition-colors hover:text-blue-600 ${
-                  scrolled ? 'text-gray-700' : 'text-white'
-                }`}
+          {/* Hamburger Button (All Screen Sizes) */}
+          <div className="relative">
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className={`p-2 transition-colors ${
+                scrolled ? 'text-gray-700' : 'text-white'
+              }`}
+              aria-label="Toggle menu"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
               >
-                {item.name}
-              </a>
-            ))}
-          </nav>
+                {mobileMenuOpen ? (
+                  <path d="M6 18L18 6M6 6l12 12" />
+                ) : (
+                  <path d="M4 6h16M4 12h16M4 18h16" />
+                )}
+              </svg>
+            </button>
 
-          <a
-            href="#contact"
-            className={`px-6 py-2 rounded-lg font-semibold transition-all ${
-              scrolled
-                ? 'bg-blue-600 text-white hover:bg-blue-700'
-                : 'bg-white text-blue-900 hover:bg-blue-50'
-            }`}
-          >
-            Contact Us
-          </a>
+            {/* Menu Dropdown */}
+            {mobileMenuOpen && (
+              <div className="absolute top-full right-0 mt-2 md:w-[12vw] w-[80vw] bg-white border border-gray-200 shadow-2xl rounded-lg">
+                <nav className="px-6 py-4 space-y-1">
+                  {menuItems.map((item) => (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="block text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium py-3 px-4 rounded-lg transition-all"
+                    >
+                      {item.name}
+                    </a>
+                  ))}
+                  <a
+                    href="#contact"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="block text-gray-700 hover:bg-blue-50 hover:text-blue-600 font-medium py-3 px-4 rounded-lg transition-all"
+                  >
+                    Contact Us
+                  </a>
+                </nav>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </header>
