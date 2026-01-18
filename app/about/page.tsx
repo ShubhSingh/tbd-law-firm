@@ -3,7 +3,7 @@ import { FIRM } from '../../lib/constants'
 
 export const metadata: Metadata = {
   title: 'About Us',
-  description: 'Learn about TBD Law Firm - our story, values, and commitment to providing exceptional legal services in Lucknow with integrity and professionalism.',
+  description: 'Learn about Fairworks Legal & Professional Advisors - our story, values, and commitment to providing exceptional legal and investment advisory services with 75+ years of cumulative experience.',
 }
 
 export default function About() {
@@ -22,115 +22,145 @@ export default function About() {
       <div className="max-w-6xl mx-auto px-4">
         {/* Our Story */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-6">Our Story</h2>
+          <h2 className="text-3xl font-bold mb-6">About Us</h2>
           <div className="prose max-w-none">
             <p className="text-lg text-gray-700 mb-4">
-              {FIRM.NAME} is a distinguished law firm based in Lucknow, Uttar Pradesh, dedicated to 
-              providing comprehensive legal services to individuals and businesses. With a strong foundation 
-              built on integrity, expertise, and client satisfaction, we have established ourselves as a 
-              trusted name in the legal community.
+              With a vast cumulative experience of approximately 75 years, Fairworks Legal & Professional Advisors is engaged in
+              providing legal and investment advisory services.
             </p>
             <p className="text-lg text-gray-700 mb-4">
-              Our firm specializes in various areas of law, offering personalized legal solutions tailored 
-              to meet the unique needs of each client. We understand that legal matters can be complex and 
-              stressful, which is why we strive to provide clear guidance and strong representation throughout 
-              the legal process.
+              We believe that advice should be practical, transparent, and fair. Our firm combines its deep expertise with a client-first approach,
+              ensuring every engagement is handled with diligence, discretion, and purpose.
+            </p>
+            <p className="text-lg text-gray-700 mb-4">
+              Whether advising on complex legal issues or offering strategic professional guidance, we focus
+              on delivering solutions that protect your interests and support long-term success.
+            </p>
+            <p className="text-lg text-gray-700 mb-4 italic font-medium text-blue-900">
+              "Navigating through a complex and evolving environment, Fairworks provides affordable legal and financial
+              advisory services to individuals and businesses, with a clear focus on inclusive and collective growth."
             </p>
           </div>
         </section>
 
-        {/* Our Values */}
-        <section className="mb-16 bg-gray-50 rounded-lg p-8">
-          <h2 className="text-3xl font-bold mb-8 text-center">Our Core Values</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="text-5xl mb-4">⚖️</div>
-              <h3 className="text-xl font-bold mb-3">Integrity</h3>
-              <p className="text-gray-600">
-                We uphold the highest ethical standards in all our professional dealings, 
-                ensuring honesty and transparency with our clients.
+        {/* Vision & Mission */}
+        <section className="mb-16">
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-gradient-to-br from-blue-50 to-white rounded-lg p-8 border-l-4 border-blue-600">
+              <div className="text-4xl mb-4">🎯</div>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Our Vision</h3>
+              <p className="text-gray-700 text-lg">
+                Aim to establish ourselves as a trusted partner in the legal and financial domains by
+                providing ethical, client-focused solutions.
               </p>
             </div>
-            <div className="text-center">
-              <div className="text-5xl mb-4">🎯</div>
-              <h3 className="text-xl font-bold mb-3">Excellence</h3>
-              <p className="text-gray-600">
-                We are committed to delivering exceptional legal services through continuous 
-                learning and staying updated with legal developments.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="text-5xl mb-4">🤝</div>
-              <h3 className="text-xl font-bold mb-3">Client Focus</h3>
-              <p className="text-gray-600">
-                Our clients' interests are at the heart of everything we do. We work diligently 
-                to achieve the best possible outcomes.
+            <div className="bg-gradient-to-br from-blue-50 to-white rounded-lg p-8 border-l-4 border-blue-600">
+              <div className="text-4xl mb-4">🚀</div>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Our Mission</h3>
+              <p className="text-gray-700 text-lg">
+                To deliver practical, customized and cost-effective solutions that always put our
+                client's best interests first.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Why Choose Us */}
+        {/* Our Values - PAVRD Philosophy */}
+        <section className="mb-16 bg-gradient-to-br from-slate-50 to-blue-50 rounded-lg p-8">
+          <h2 className="text-3xl font-bold mb-4 text-center">Our Values: The PAVRD Philosophy</h2>
+          <p className="text-center text-gray-700 mb-8 max-w-3xl mx-auto">
+            At {FIRM.NAME}, our services are designed around the customer, driven by the PAVRD philosophy.
+            Our aim is to deliver exceptional experiences through deep Personalization and unwavering Authenticity.
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow">
+              <div className="text-4xl mb-3">👤</div>
+              <h3 className="text-xl font-bold mb-3 text-blue-900">Personalization</h3>
+              <p className="text-gray-600">
+                We don't believe in one-size-fits-all. We listen first so that we can tailor our
+                approach to every individual or business.
+              </p>
+            </div>
+            <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow">
+              <div className="text-4xl mb-3">✨</div>
+              <h3 className="text-xl font-bold mb-3 text-blue-900">Authenticity</h3>
+              <p className="text-gray-600">
+                We show up as our true selves. We are honest, transparent, and accountable for what we do.
+              </p>
+            </div>
+            <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow">
+              <div className="text-4xl mb-3">💎</div>
+              <h3 className="text-xl font-bold mb-3 text-blue-900">Value</h3>
+              <p className="text-gray-600">
+                Every interaction must leave the customer better off. If it doesn't add value, we don't do it.
+              </p>
+            </div>
+            <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow">
+              <div className="text-4xl mb-3">⚡</div>
+              <h3 className="text-xl font-bold mb-3 text-blue-900">Responsiveness</h3>
+              <p className="text-gray-600">
+                Speed is a sign of respect. We act with urgency to ensure our customers never feel ignored.
+              </p>
+            </div>
+            <div className="bg-white rounded-lg p-6 shadow-md hover:shadow-xl transition-shadow">
+              <div className="text-4xl mb-3">🌟</div>
+              <h3 className="text-xl font-bold mb-3 text-blue-900">Delight</h3>
+              <p className="text-gray-600">
+                We aim for the "wow" factor. We look for opportunities to exceed expectations and create lasting memories.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Partner With Us */}
         <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-8">Why Choose {FIRM.NAME}?</h2>
+          <h2 className="text-3xl font-bold mb-8">Why Partner With Us</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="flex gap-4">
-              <div className="text-3xl">✓</div>
+              <div className="text-3xl text-blue-600">✓</div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Experienced Legal Team</h3>
-                <p className="text-gray-600">
-                  Our advocates bring years of courtroom experience and deep knowledge of Indian law 
-                  across multiple practice areas.
+                <p className="text-lg text-gray-700">
+                  Strong understanding of the legal and financial systems
                 </p>
               </div>
             </div>
             <div className="flex gap-4">
-              <div className="text-3xl">✓</div>
+              <div className="text-3xl text-blue-600">✓</div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Personalized Approach</h3>
-                <p className="text-gray-600">
-                  We understand that every case is unique and provide tailored legal strategies 
-                  to meet your specific needs.
+                <p className="text-lg text-gray-700">
+                  Integrated advisory approach under one roof
                 </p>
               </div>
             </div>
             <div className="flex gap-4">
-              <div className="text-3xl">✓</div>
+              <div className="text-3xl text-blue-600">✓</div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Bilingual Services</h3>
-                <p className="text-gray-600">
-                  We provide legal services in both Hindi and English, ensuring clear communication 
-                  and understanding.
+                <p className="text-lg text-gray-700">
+                  Tailored solutions aligned with client objectives
                 </p>
               </div>
             </div>
             <div className="flex gap-4">
-              <div className="text-3xl">✓</div>
+              <div className="text-3xl text-blue-600">✓</div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Strong Track Record</h3>
-                <p className="text-gray-600">
-                  Our successful case outcomes and satisfied clients speak to our commitment 
-                  to excellence in legal representation.
+                <p className="text-lg text-gray-700">
+                  Proven experience across domains and verticals
                 </p>
               </div>
             </div>
             <div className="flex gap-4">
-              <div className="text-3xl">✓</div>
+              <div className="text-3xl text-blue-600">✓</div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Transparent Communication</h3>
-                <p className="text-gray-600">
-                  We keep our clients informed at every stage of their case, ensuring they 
-                  understand the legal process and options.
+                <p className="text-lg text-gray-700">
+                  Professional, ethical, and transparent service delivery
                 </p>
               </div>
             </div>
             <div className="flex gap-4">
-              <div className="text-3xl">✓</div>
+              <div className="text-3xl text-blue-600">✓</div>
               <div>
-                <h3 className="text-xl font-semibold mb-2">Accessible Location</h3>
-                <p className="text-gray-600">
-                  Conveniently located in Lucknow, we are easily accessible to clients 
-                  throughout the region.
+                <p className="text-lg text-gray-700">
+                  Confidential, responsive, and reliable support
                 </p>
               </div>
             </div>
@@ -141,18 +171,18 @@ export default function About() {
         <section className="mb-16 bg-blue-50 rounded-lg p-8">
           <h2 className="text-3xl font-bold mb-6">Our Commitment to You</h2>
           <p className="text-lg text-gray-700 mb-4">
-            At {FIRM.NAME}, we are committed to providing our clients with the highest quality legal 
-            representation. We understand that facing legal challenges can be overwhelming, and we are 
-            here to guide you through every step of the process.
+            At {FIRM.NAME}, we are committed to providing practical, transparent, and fair advice.
+            Our firm combines deep expertise with a client-first approach, ensuring every engagement
+            is handled with diligence, discretion, and purpose.
           </p>
           <p className="text-lg text-gray-700 mb-4">
-            Our approach is built on open communication, thorough preparation, and aggressive advocacy 
-            when necessary. We take the time to understand your situation, explain your options clearly, 
-            and work tirelessly to achieve the best possible outcome for your case.
+            We focus on delivering solutions that protect your interests and support long-term success.
+            Whether advising on complex legal issues or offering strategic professional guidance, we
+            provide affordable services with a clear focus on inclusive and collective growth.
           </p>
           <p className="text-lg text-gray-700">
-            Whether you are facing a complex legal dispute or need guidance on a straightforward matter, 
-            you can trust {FIRM.NAME} to provide the expert legal support you need.
+            With 75+ years of cumulative experience, you can trust {FIRM.NAME} to be your reliable
+            partner in navigating the complex legal and financial landscape.
           </p>
         </section>
 
