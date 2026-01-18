@@ -19,7 +19,7 @@ export default function Header() {
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Services', href: '#services' },
-    { name: 'PAVRD', href: '#pavrd' },
+    { name: 'Values', href: '#values' },
     { name: 'Team', href: '#team' }
   ]
 

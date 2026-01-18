@@ -295,7 +295,7 @@ export default function Home() {
       </section>
 
       {/* PAVRD Philosophy Section */}
-      <section id="pavrd" className="py-20 bg-white">
+      <section id="values" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Our Values: The PAVRD Philosophy</h2>
