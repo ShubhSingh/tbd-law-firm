@@ -46,6 +46,43 @@ section {
     background-image: none !important;
   }
 
+  /* Contact section - lighter theme on mobile */
+  section#contact {
+    background: linear-gradient(to bottom right, #f1f5f9, #e0e7ff, #f1f5f9) !important;
+  }
+
+  section#contact * {
+    color: #1e293b !important;
+  }
+
+  section#contact .text-blue-200 {
+    color: #1e40af !important;
+  }
+
+  section#contact .bg-white\/10 {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+  }
+
+  section#contact .border-white\/20 {
+    border-color: #cbd5e1 !important;
+  }
+
+  section#contact input,
+  section#contact textarea {
+    background-color: white !important;
+    border-color: #cbd5e1 !important;
+    color: #1e293b !important;
+  }
+
+  section#contact input::placeholder,
+  section#contact textarea::placeholder {
+    color: #64748b !important;
+  }
+
+  section#contact .w-24.h-1 {
+    background-color: #2563eb !important;
+  }
+
   /* Card backgrounds - professional dark */
   .bg-white {
     background-color: #334155 !important;
