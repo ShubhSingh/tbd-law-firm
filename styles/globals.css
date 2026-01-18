@@ -32,29 +32,38 @@ section {
   scroll-margin-top: 80px;
 }
 
-/* Mobile Dark Theme - Hero Style for All Pages */
+/* Mobile Professional Dark Theme */
 @media (max-width: 767px) {
   body {
-    background: linear-gradient(to bottom right, #0f172a, #1e3a8a, #0f172a);
+    background: #1e293b;
     color: #e2e8f0;
     min-height: 100vh;
   }
 
   /* Override light backgrounds on mobile */
   section {
-    background: transparent !important;
+    background: #1e293b !important;
     background-image: none !important;
   }
 
-  /* Card backgrounds - semi-transparent dark */
+  /* Card backgrounds - professional dark */
   .bg-white {
-    background-color: rgba(30, 41, 59, 0.8) !important;
-    backdrop-filter: blur(10px);
+    background-color: #334155 !important;
+    border: 1px solid #475569;
+  }
+
+  /* Gradient backgrounds */
+  .bg-gradient-to-br {
+    background: #334155 !important;
   }
 
   /* Text colors */
   .text-gray-900 {
     color: #f1f5f9 !important;
+  }
+
+  .text-gray-800 {
+    color: #e2e8f0 !important;
   }
 
   .text-gray-700 {
@@ -65,15 +74,28 @@ section {
     color: #94a3b8 !important;
   }
 
+  /* Blue text adjustments */
+  .text-blue-900 {
+    color: #60a5fa !important;
+  }
+
+  .text-blue-800 {
+    color: #93c5fd !important;
+  }
+
   /* Border colors */
   .border-gray-200 {
-    border-color: rgba(51, 65, 85, 0.5) !important;
+    border-color: #475569 !important;
+  }
+
+  .border-blue-600 {
+    border-color: #3b82f6 !important;
   }
 
   /* Form inputs */
   input, textarea, select {
-    background-color: rgba(30, 41, 59, 0.8) !important;
-    border-color: rgba(51, 65, 85, 0.5) !important;
+    background-color: #334155 !important;
+    border-color: #475569 !important;
     color: #e2e8f0 !important;
   }
 
@@ -82,7 +104,7 @@ section {
     color: #64748b !important;
   }
 
-  /* Buttons - keep blue */
+  /* Buttons */
   .bg-blue-600,
   .bg-blue-900 {
     background-color: #2563eb !important;
@@ -90,7 +112,14 @@ section {
 
   /* Footer */
   footer {
-    background-color: rgba(2, 6, 23, 0.9) !important;
+    background-color: #0f172a !important;
+  }
+
+  /* Shadows - reduce on dark theme */
+  .shadow-lg,
+  .shadow-xl,
+  .shadow-2xl {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2) !important;
   }
 }
 
