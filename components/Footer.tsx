@@ -20,6 +20,7 @@ export default function Footer() {
               <li><a href="#home" className="hover:text-white transition">Home</a></li>
               <li><a href="#about" className="hover:text-white transition">About</a></li>
               <li><a href="#services" className="hover:text-white transition">Services</a></li>
+              <li><a href="#values" className="hover:text-white transition">Values</a></li>
               <li><a href="#team" className="hover:text-white transition">Team</a></li>
               <li><a href="#contact" className="hover:text-white transition">Contact</a></li>
             </ul>
