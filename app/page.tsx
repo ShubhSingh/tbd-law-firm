@@ -294,6 +294,111 @@ export default function Home() {
         </div>
       </section>
 
+      {/* PAVRD Philosophy Section */}
+      <section id="pavrd" className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Our Values: The PAVRD Philosophy</h2>
+            <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
+          </div>
+
+          {/* Introduction */}
+          <div className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-lg p-8 md:p-12 mb-12">
+            <p className="text-xl text-gray-800 leading-relaxed mb-6 text-center max-w-4xl mx-auto">
+              At {FIRM.NAME}, our services are designed around the customer, driven by the <span className="font-bold text-blue-900">PAVRD philosophy</span>. 
+              Our aim is to deliver exceptional experiences through deep Personalization and unwavering Authenticity.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed text-center max-w-4xl mx-auto">
+              We believe in providing tangible Value in every solution we deliver, staying Responsive to the needs of our community, 
+              and consistently going above and beyond to Delight those we serve.
+            </p>
+          </div>
+
+          {/* PAVRD Values */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Personalization */}
+            <div className="bg-white rounded-lg p-8 shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2">
+              <div className="text-6xl mb-4">👤</div>
+              <h3 className="text-2xl font-bold mb-4 text-blue-900">Personalization</h3>
+              <p className="text-gray-700 leading-relaxed">
+                We don't believe in one-size-fits-all. We listen first so that we can tailor our
+                approach to every individual or business.
+              </p>
+            </div>
+
+            {/* Authenticity */}
+            <div className="bg-white rounded-lg p-8 shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2">
+              <div className="text-6xl mb-4">✨</div>
+              <h3 className="text-2xl font-bold mb-4 text-blue-900">Authenticity</h3>
+              <p className="text-gray-700 leading-relaxed">
+                We show up as our true selves. We are honest, transparent, and accountable for what we do.
+              </p>
+            </div>
+
+            {/* Value */}
+            <div className="bg-white rounded-lg p-8 shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2">
+              <div className="text-6xl mb-4">💎</div>
+              <h3 className="text-2xl font-bold mb-4 text-blue-900">Value</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Every interaction must leave the customer better off. If it doesn't add value, we don't do it.
+              </p>
+            </div>
+
+            {/* Responsiveness */}
+            <div className="bg-white rounded-lg p-8 shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2">
+              <div className="text-6xl mb-4">⚡</div>
+              <h3 className="text-2xl font-bold mb-4 text-blue-900">Responsiveness</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Speed is a sign of respect. We act with urgency to ensure our customers never feel ignored.
+              </p>
+            </div>
+
+            {/* Delight */}
+            <div className="bg-white rounded-lg p-8 shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2">
+              <div className="text-6xl mb-4">🌟</div>
+              <h3 className="text-2xl font-bold mb-4 text-blue-900">Delight</h3>
+              <p className="text-gray-700 leading-relaxed">
+                We aim for the "wow" factor. We look for opportunities to exceed expectations and create lasting memories.
+              </p>
+            </div>
+          </div>
+        </div>
+          {/* Why It Works */}
+          <div className="mt-16 bg-gradient-to-br from-blue-900 to-blue-800 rounded-lg p-8 md:p-12 text-white">
+            <h3 className="text-3xl font-bold mb-8 text-center">Why It Works</h3>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
+              <div className="text-center">
+                <div className="text-5xl mb-4">🔄</div>
+                <h4 className="text-xl font-bold mb-3">From Transactional to Relational</h4>
+                <p className="text-blue-100">
+                  Building lasting relationships beyond single transactions
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="text-5xl mb-4">🤝</div>
+                <h4 className="text-xl font-bold mb-3">Increased Trust</h4>
+                <p className="text-blue-100">
+                  Earning confidence through consistent, authentic service
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="text-5xl mb-4">💙</div>
+                <h4 className="text-xl font-bold mb-3">Greater Loyalty</h4>
+                <p className="text-blue-100">
+                  Creating devoted clients who return and refer others
+                </p>
+              </div>
+              <div className="text-center">
+                <div className="text-5xl mb-4">📢</div>
+                <h4 className="text-xl font-bold mb-3">Long-Term Advocacy</h4>
+                <p className="text-blue-100">
+                  Transforming clients into passionate advocates for our services
+                </p>
+              </div>
+            </div>
+          </div>
+      </section>
+
       {/* Team Section */}
       <section id="team" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
