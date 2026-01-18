@@ -147,6 +147,16 @@ section {
     background-color: #2563eb !important;
   }
 
+  /* Contact form button - keep white text on mobile */
+  section#contact button[type="submit"] {
+    background-color: #2563eb !important;
+    color: white !important;
+  }
+
+  section#contact button[type="submit"]:hover {
+    background-color: #1d4ed8 !important;
+  }
+
   /* Footer */
   footer {
     background-color: #0f172a !important;
