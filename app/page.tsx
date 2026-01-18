@@ -434,10 +434,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Get In Touch With Fairworks</h2>
-            <div className="w-24 h-1 bg-white mx-auto mb-8"></div>
-            <p className="text-xl text-blue-200 max-w-3xl mx-auto">
-              Contact us today for professional legal assistance
-            </p>
+            <div className="w-24 h-1 bg-white mx-auto"></div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
