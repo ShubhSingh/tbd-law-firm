@@ -87,7 +87,7 @@ export default function Header() {
                     onClick={() => setMobileMenuOpen(false)}
                     className="block text-white hover:bg-slate-700 hover:text-blue-300 font-medium py-3 px-4 rounded-lg transition-all"
                   >
-                    Contact Us
+                    Contact Fairworks
                   </a>
                 </nav>
               </div>

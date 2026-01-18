@@ -42,13 +42,13 @@ export default function Home() {
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE2YzAtMi4yMSAxLjc5LTQgNC00czQgMS43OSA0IDQtMS43OSA0LTQgNC00LTEuNzktNC00em0wIDI0YzAtMi4yMSAxLjc5LTQgNC00czQgMS43OSA0IDQtMS43OSA0LTQgNC00LTEuNzktNC00ek0xMiAxNmMwLTIuMjEgMS43OS00IDQtNHM0IDEuNzkgNCA0LTEuNzkgNC00IDQtNC0xLjc5LTQtNHptMCAyNGMwLTIuMjEgMS43OS00IDQtNHM0IDEuNzkgNCA0LTEuNzkgNC00IDQtNC0xLjc5LTQtNHoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-20"></div>
         
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
-          <h1 className="text-6xl md:text-7xl font-bold mb-6 animate-fade-in">
+          <h1 className="text-5xl md:text-7xl font-bold mb-3 md:mb-6 animate-fade-in">
             {FIRM.NAME}
           </h1>
-          <p className="text-2xl md:text-3xl mb-4 text-blue-200 font-semibold">
+          <p className="text-xl md:text-3xl mb-4 md:mb-6 text-blue-200 font-semibold">
             {FIRM.TAGLINE}
           </p>
-          <p className="text-xl mb-8 text-gray-300 max-w-3xl mx-auto">
+          <p className="text-base md:text-xl mb-6 md:mb-8 text-gray-300 max-w-3xl mx-auto">
             With 75+ years of cumulative experience, we provide practical, transparent, and fair
             legal and investment advisory services. Navigating complex environments with affordable
             solutions focused on inclusive and collective growth.
@@ -102,7 +102,7 @@ export default function Home() {
             </a>
             <a
               href="#services"
-              className="border-2 border-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-900 transition-all transform hover:scale-105"
+              className="hidden sm:block border-2 border-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-blue-900 transition-all transform hover:scale-105"
             >
               Our Services
             </a>
@@ -119,7 +119,7 @@ export default function Home() {
       <section id="about" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">About Us</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">About Fairworks</h2>
             <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
           </div>
 
@@ -169,7 +169,7 @@ export default function Home() {
 
           {/* Why Partner With Us */}
           <div className="bg-gradient-to-br from-slate-50 to-blue-50 rounded-lg p-8">
-            <h3 className="text-3xl font-bold mb-8 text-center">Why Partner With Us</h3>
+            <h3 className="text-3xl font-bold mb-8 text-center">Why Partner With Fairworks</h3>
             <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
               <div className="flex gap-4">
                 <div className="text-3xl text-blue-600">✓</div>
@@ -216,7 +216,7 @@ export default function Home() {
       <section id="services" className="py-20 bg-gradient-to-br from-slate-50 to-blue-50">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Our Services</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Fairworks Services</h2>
             <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Comprehensive legal services across multiple practice areas
@@ -298,7 +298,7 @@ export default function Home() {
       <section id="values" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Our Values: The PAVRD Philosophy</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Fairworks Values: The PAVRD Philosophy</h2>
             <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
           </div>
 
@@ -403,7 +403,7 @@ export default function Home() {
       <section id="team" className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Our Team</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">Fairworks Team</h2>
             <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Experienced legal professionals dedicated to your success
@@ -430,10 +430,10 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white">
+      <section id="contact" className="py-20 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 md:text-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">Get In Touch With Fairworks</h2>
             <div className="w-24 h-1 bg-white mx-auto mb-8"></div>
             <p className="text-xl text-blue-200 max-w-3xl mx-auto">
               Contact us today for professional legal assistance
