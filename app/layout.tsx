@@ -5,15 +5,15 @@ import Footer from '../components/Footer'
 
 export const metadata: Metadata = {
   title: {
-    default: 'TBD Law Firm – Expert Legal Services in Lucknow',
-    template: '%s | TBD Law Firm'
+    default: 'Fairworks Legal & Professional Advisors – Trusted Advice. Fair Outcomes.',
+    template: '%s | Fairworks Legal & Professional Advisors'
   },
-  description: 'Professional legal services in Lucknow, Uttar Pradesh. Expert advocates specializing in civil, criminal, family, property, and corporate law. Bilingual services in Hindi and English.',
-  keywords: ['law firm Lucknow', 'advocates Lucknow', 'legal services', 'lawyer Lucknow', 'civil litigation', 'criminal defense', 'family law'],
-  authors: [{ name: 'TBD Law Firm' }],
+  description: 'With 75+ years of cumulative experience, Fairworks provides practical, transparent, and fair legal and investment advisory services in Lucknow. Integrated approach for individuals and businesses.',
+  keywords: ['law firm Lucknow', 'legal advisors', 'investment advisory', 'financial advisory', 'legal services Lucknow', 'professional advisors', 'Fairworks'],
+  authors: [{ name: 'Fairworks Legal & Professional Advisors' }],
   openGraph: {
-    title: 'TBD Law Firm – Expert Legal Services in Lucknow',
-    description: 'Professional legal services in Lucknow. Expert advocates in civil, criminal, family, and corporate law.',
+    title: 'Fairworks Legal & Professional Advisors – Trusted Advice. Fair Outcomes.',
+    description: 'With 75+ years of experience, providing integrated legal and investment advisory services in Lucknow with a client-first approach.',
     type: 'website',
     locale: 'en_IN',
   },
